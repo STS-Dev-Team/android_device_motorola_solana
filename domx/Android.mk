@@ -5,4 +5,5 @@ OMAP4_DEBUG_MEMLEAK:= false
 BUILD_HEAPTRACKED_SHARED_LIBRARY:=$(BUILD_SHARED_LIBRARY)
 BUILD_HEAPTRACKED_EXECUTABLE:= $(BUILD_EXECUTABLE)
 
-include $(all-subdir-makefiles)
+include $(call first-makefiles-under,$(LOCAL_PATH))
+

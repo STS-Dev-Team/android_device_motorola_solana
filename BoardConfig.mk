@@ -6,7 +6,8 @@ COMMON_GLOBAL_CFLAGS += -DBOARD_USES_KEXEC
 endif
 
 # includes fix for framebuffer
-TARGET_SPECIFIC_HEADER_PATH := device/motorola/solana/include
+PRODUCT_VENDOR_KERNEL_HEADERS := $(DEVICE_FOLDER)/kernel-headers
+TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_FOLDER)/include
 
 # Camera
 USE_CAMERA_STUB := false
