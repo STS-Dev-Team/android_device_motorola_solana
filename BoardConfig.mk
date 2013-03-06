@@ -38,12 +38,12 @@ TARGET_ARCH_VARIANT_FPU := neon
 ARCH_ARM_HAVE_TLS_REGISTER := true
 # CodeAurora Optimizations: msm8960: Improve performance of memmove, bcopy, and memmove_words
 # added by twa_priv
-TARGET_USE_KRAIT_BIONIC_OPTIMIZATION := true
-TARGET_USE_KRAIT_PLD_SET := true
-TARGET_KRAIT_BIONIC_PLDOFFS := 10
-TARGET_KRAIT_BIONIC_PLDTHRESH := 10
-TARGET_KRAIT_BIONIC_BBTHRESH := 64
-TARGET_KRAIT_BIONIC_PLDSIZE := 64
+#TARGET_USE_KRAIT_BIONIC_OPTIMIZATION := true
+#TARGET_USE_KRAIT_PLD_SET := true
+#TARGET_KRAIT_BIONIC_PLDOFFS := 10
+#TARGET_KRAIT_BIONIC_PLDTHRESH := 10
+#TARGET_KRAIT_BIONIC_BBTHRESH := 64
+#TARGET_KRAIT_BIONIC_PLDSIZE := 64
 
 # Kernel/Module Build
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
@@ -51,7 +51,7 @@ TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
 
 # Kernel Build
 TARGET_KERNEL_SOURCE := kernel/motorola/omap4-kexec-common
-TARGET_KERNEL_CONFIG := mapphone_solana_jb_defconfig
+TARGET_KERNEL_CONFIG := mapphone_solana_phablet_defconfig
 
 WLAN_MODULES:
 	make clean -C hardware/ti/wlan/mac80211/compat_wl12xx
