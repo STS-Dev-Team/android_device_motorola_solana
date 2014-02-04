@@ -276,7 +276,7 @@ ro.com.google.clientid=android-motorola
 ro.mot.hw.uaprof=http://uaprof.motorola.com/phoneconfig/MotoMB200/profile/MotoMB200.rdf
 ro.mot.hidden_keyboards=evfwd
 ro.setupwizard.enable_bypass=1
-persist.sys.usb.config=mtp,adb
+persist.sys.usb.config=mass_storage,adb
 
 com.ti.omap_enhancement=true
 hwui.render_dirty_regions=false

@@ -17,7 +17,19 @@
 <!-- Passion-specific phone app resources. -->
 <resources>
 
+	<!-- Determine whether we want to display the OTA activation screen, which gives the user option to activate or cancel -->
+    <integer name="OtaShowActivationScreen">1</integer>
+    <!-- Determine whether we should show the "listen for instructions" screen after successfully placing the OTA call -->
+    <integer name="OtaShowListeningScreen">1</integer>	
+    <!-- The number of times we should show the activation screen/allow the provisioning to fail before just showing an unsuccessful dialog -->
+    <integer name="OtaShowActivateFailTimes">0</integer>	
+	<!-- Determine whether or not we should play the success/failure tone -->
+	<integer name="OtaPlaySuccessFailureTone">0</integer>
+	
     <!-- Flag indicating if the phone is a world phone-->
     <bool name="world_phone">true</bool>
+	
+	<!-- Determines if device implements a noise suppression device for in call audio-->
+    <bool name="has_in_call_noise_suppression">true</bool>
 
 </resources>
